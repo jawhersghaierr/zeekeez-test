@@ -6,12 +6,16 @@ export interface PostState {
   loading: boolean;
   posts: Post[];
   error: string | null;
+  currentPage: number;
+  postsPerPage: number;
 }
 // default post initial state
 const initialState: PostState = {
   loading: false,
   posts: [],
   error: null,
+  currentPage: 1,
+  postsPerPage: 10,
 };
 const postSlice = createSlice({
   name: "post",
@@ -21,6 +25,8 @@ const postSlice = createSlice({
       state.loading = true;
       state.posts = [];
       state.error = null;
+      state.currentPage = 1;
+      state.postsPerPage = 10;
     },
     getPostsSuccess(state, action: PayloadAction<Post[]>) {
       state.posts = action.payload;
@@ -31,11 +37,19 @@ const postSlice = createSlice({
       state.loading = false;
       state.error = action.payload;
     },
+
+    setCurrentPage: (state, action) => {
+      state.currentPage = action.payload;
+    },
   },
 });
 
-export const { getPostsSuccess, getPostsFailure, getPostsStart } =
-  postSlice.actions;
+export const {
+  getPostsSuccess,
+  getPostsFailure,
+  getPostsStart,
+  setCurrentPage,
+} = postSlice.actions;
 //export to use it on combineReducer on reduc config
 export default postSlice.reducer;
 
