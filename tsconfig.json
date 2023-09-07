@@ -25,10 +25,10 @@
         "name": "typescript-eslint"
       }
     ],
-    "baseUrl": ".", // or "./",
+    "baseUrl": "./", // or "./",
     "paths": {
-      "@/components/*": ["components/*"]
-        }
+      "@/*": ["src/*"]
+    }
   },
   "include": [
     "next-env.d.ts",
