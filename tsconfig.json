@@ -27,6 +27,7 @@
     ],
     "baseUrl": "./", // or "./",
     "paths": {
+<<<<<<< HEAD
       "@/*": ["src/*"]
     }
   },
@@ -35,6 +36,17 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
+=======
+      "@/*": [
+        "./src/*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "@types"
+>>>>>>> 4143246 (fix)
   ],
   "exclude": [
     "node_modules"
