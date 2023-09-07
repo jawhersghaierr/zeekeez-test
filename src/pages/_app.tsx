@@ -9,7 +9,7 @@ import Header from "../components/Header";
 const MyApp = ({ Component, pageProps }: AppProps) => (
   <Provider store={store}>
     <div className="container">
-      <Header /> {/* Provide the path to your logo */}
+      <Header />
     </div>
     <div className="container container-with-background">
       <>

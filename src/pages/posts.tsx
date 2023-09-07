@@ -28,7 +28,6 @@ export default function Posts() {
 
   return (
     <div className=" mt-5">
-      {/* Contenu de votre page */}
       {showOtherContent ? (
         <>
           <div className="smallContainer">

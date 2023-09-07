@@ -26,7 +26,6 @@ const PostList: React.FC<PostListProps> = ({ page, onPageChange }) => {
     dispatch(setCurrentPage(newPage));
   };
 
-  // Filtrer les posts en fonction de la valeur de recherche
   const filteredPosts = posts.filter((post) =>
     post.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
