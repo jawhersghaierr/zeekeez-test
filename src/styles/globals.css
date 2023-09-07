@@ -12,11 +12,13 @@
     .smallTitle {
         font-size: 14px;
         margin: 10px;
+        color: white;
       }
   
       .smallContent {
         font-size: 12px;
         margin: 12px;
+        color: white;
       }
       .smallContainer{
         display: flex;
@@ -28,7 +30,8 @@
 }
 
 .container-with-background {
-  background-color: antiquewhite;
+  margin-top: 0;
+  background-color: brown;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

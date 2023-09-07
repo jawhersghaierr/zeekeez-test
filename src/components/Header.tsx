@@ -1,8 +1,13 @@
-// components/Header.tsx
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 
 const Header: React.FC = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container">
@@ -10,16 +15,19 @@ const Header: React.FC = () => {
           <img src="/zeekeezlogo.svg" alt="Logo" width="120" />
         </a>
 
+        {/* Add the mobile menu button */}
         <button
           className="navbar-toggler"
           type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
+          onClick={toggleMobileMenu}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className="collapse navbar-collapse" id="navbarNav">
+        {/* Add the collapse class and conditional CSS for mobile menu */}
+        <div
+          className={`collapse navbar-collapse ${isMobileMenuOpen && "show"}`}
+        >
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
               <a href="/" className="nav-link">

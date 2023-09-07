@@ -32,7 +32,9 @@ export default function Posts() {
       {showOtherContent ? (
         <>
           <div className="smallContainer">
-            <h1 className="smallTitle p-3">Liste des postes</h1>
+            <h1 style={{ color: "white" }} className="smallTitle p-3">
+              Liste des postes
+            </h1>
           </div>
           <PostList page={currentPage} onPageChange={handlePageChange} />
         </>

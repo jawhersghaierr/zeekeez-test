@@ -55,7 +55,7 @@ const PostList: React.FC<PostListProps> = ({ page, onPageChange }) => {
         </div>
       ))}
       <div className={styles.pagination}>
-        <p className={styles.smallContent}>
+        <p style={{ color: "white" }} className={styles.smallContent}>
           {indexOfFirstPost + 1} to {Math.min(indexOfLastPost, totalPosts)} of{" "}
           {totalPosts}
         </p>
@@ -67,7 +67,7 @@ const PostList: React.FC<PostListProps> = ({ page, onPageChange }) => {
           >
             Précédent
           </button>
-          <p className={styles.smallContent}>
+          <p style={{ color: "white" }} className={styles.smallContent}>
             page {currentPage} of {totalPages}
           </p>
 

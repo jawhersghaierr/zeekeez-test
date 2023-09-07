@@ -7,10 +7,12 @@
         /* Adjust font size for the title and content */
         .smallTitle {
             font-size: 12px;
+
           }
       
           .smallContent {
             font-size: 14px;
+
           }
     }
   }

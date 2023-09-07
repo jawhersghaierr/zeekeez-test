@@ -12,6 +12,7 @@ const ComplexSVGAnimation = () => {
           <image
             href="/zeekeezlogo.svg" // Update the path to your local image
             width="180" // Adjust the width as needed
+            height="180" // Adjust the height as needed
           />
         </g>
       </svg>
