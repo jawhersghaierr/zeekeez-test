@@ -2,7 +2,10 @@
   "compilerOptions": {
     "types": [
       "cypress",
-      "@cypress/react"
+      "@cypress/react",
+      "jest",
+      "jest-dom",
+      "@testing-library/jest-dom"
     ],
     "target": "es5",
     "lib": [
@@ -26,11 +29,10 @@
         "name": "typescript-eslint"
       }
     ],
+    "baseUrl": ".", // or "./",
     "paths": {
-      "@/*": [
-        "./src/*"
-      ]
-    }
+      "@/components/*": ["components/*"]
+        }
   },
   "include": [
     "next-env.d.ts",

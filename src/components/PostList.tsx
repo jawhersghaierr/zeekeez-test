@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { useAppDispatch, useAppSelector } from "@/hooks/hooks";
-import { RootState } from "@/redux/store";
-import { fetchPosts, setCurrentPage } from "@/redux/slices/PostSlice";
 import Link from "next/link";
+import { useAppDispatch, useAppSelector } from "../hooks/hooks";
+import { RootState } from "../redux/store";
+import { fetchPosts, setCurrentPage } from "../redux/slices/PostSlice";
 
 import styles from "../styles/PostList.module.css";
 
