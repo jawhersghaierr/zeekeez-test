@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { Post } from "../interfaces/PostType";
-import { getPosts } from "@/api/api";
+import { getPosts } from "../../api/api";
 
 export interface PostState {
   loading: boolean;

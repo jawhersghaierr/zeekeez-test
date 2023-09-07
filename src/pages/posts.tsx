@@ -1,5 +1,5 @@
-import ComplexSVGAnimation from "@/components/ComplexSVGAnimation";
-import PostList from "@/components/PostList";
+import ComplexSVGAnimation from "../components/ComplexSVGAnimation";
+import PostList from "../components/PostList";
 import { useEffect, useState } from "react";
 
 export default function Posts() {
