@@ -3,4 +3,25 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @media (max-width: 768px) {
+    /* Styles for screens up to 768px width (adjust as needed) */
+
+    /* Adjust font size for the title and content */
+    .smallTitle {
+        font-size: 14px;
+        margin: 10px;
+      }
+  
+      .smallContent {
+        font-size: 12px;
+        margin: 12px;
+      }
+      .smallContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
 }
+}
+

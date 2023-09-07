@@ -29,8 +29,13 @@ export default function PostDetails({ postId }: { postId: number }) {
 
   return (
     <div className="center-content mt-5">
-      <h1>{post?.title}</h1>
-      <p>{post?.body}</p>
+      <div className="smallContainer">
+        <h1 className="smallTitle">Détail du post: {postId}</h1>
+      </div>
+      <div className="smallContainer">
+        <h3 className="smallTitle">{post?.title}</h3>
+        <p className="smallContent">{post?.body}</p>
+      </div>
     </div>
   );
 }

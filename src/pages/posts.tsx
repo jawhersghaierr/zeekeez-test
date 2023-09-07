@@ -30,11 +30,15 @@ export default function Posts() {
     <div className="center-content mt-5">
       {/* Contenu de votre page */}
       {showOtherContent ? (
-        <div>
-          <h1>Liste des postes</h1>
-          <p>Ceci est un exemple de contenu des posts</p>
+        <>
+          <div className="smallContainer">
+            <h1 className="smallTitle">Liste des postes</h1>
+            <p className="smallContent">
+              Ceci est un exemple de contenu des posts
+            </p>
+          </div>
           <PostList page={currentPage} onPageChange={handlePageChange} />
-        </div>
+        </>
       ) : (
         <ComplexSVGAnimation />
       )}

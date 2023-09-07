@@ -39,6 +39,7 @@ const PostList: React.FC<PostListProps> = ({ page, onPageChange }) => {
     <div className={styles.postList}>
       <div className={styles.searchContainer}>
         <input
+          className="smallTitle"
           type="text"
           placeholder="Rechercher par titre..."
           value={searchTerm}
@@ -47,7 +48,7 @@ const PostList: React.FC<PostListProps> = ({ page, onPageChange }) => {
       </div>
       <ul>
         {currentPosts.map((post) => (
-          <li key={post.id}>
+          <li key={post.id} className={styles.smallContent}>
             <Link href={`/postDetails/${post.id}`}>{post.title}</Link>
             <p>{post.body.slice(0, 50)}...</p>
           </li>
@@ -56,7 +57,7 @@ const PostList: React.FC<PostListProps> = ({ page, onPageChange }) => {
       <div className={styles.pagination}>
         {/* <p>Total : {totalPosts}</p>
           <p>Nombre de pages : {totalPages}</p> */}
-        <p>
+        <p className={styles.smallContent}>
           {indexOfFirstPost + 1} to {Math.min(indexOfLastPost, totalPosts)} of{" "}
           {totalPosts}
         </p>
@@ -68,7 +69,7 @@ const PostList: React.FC<PostListProps> = ({ page, onPageChange }) => {
           >
             Précédent
           </button>
-          <p>
+          <p className={styles.smallContent}>
             page {currentPage} of {totalPages}
           </p>
 
