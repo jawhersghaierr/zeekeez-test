@@ -23,6 +23,7 @@
     "jest-environment-jsdom": "^29.6.4",
     "jquery": "^3.7.1",
     "next": "^13.4.19",
+    "@netlify/plugin-nextjs": "^4.29.5-appdir.0",
     "popper.js": "^1.16.1",
     "postcss": "8.4.29",
     "react": "^18.2.0",
