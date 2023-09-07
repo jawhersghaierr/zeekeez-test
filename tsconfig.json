@@ -1,8 +1,6 @@
 {
   "compilerOptions": {
     "types": [
-      "cypress",
-      "@cypress/react",
       "jest"
         ],
     "target": "es5",
