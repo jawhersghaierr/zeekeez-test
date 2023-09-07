@@ -11,10 +11,9 @@ const Header: React.FC = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container">
-        <a className="navbar-brand">
+        <Link href="/" className="navbar-brand">
           <img src="/zeekeezlogo.svg" alt="Logo" width="120" />
-        </a>
-
+        </Link>
         {/* Add the mobile menu button */}
         <button
           className="navbar-toggler"
@@ -30,9 +29,7 @@ const Header: React.FC = () => {
         >
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <a href="/" className="nav-link">
-                Home
-              </a>
+              <a className="nav-link">Home</a>
             </li>
             <li className="nav-item">
               <a className="nav-link">XXXX</a>

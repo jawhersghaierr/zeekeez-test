@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import { useRouter } from "next/router";
-import { useAppSelector } from "@/hooks/hooks";
+import { useAppSelector } from "../../hooks/hooks";
 
 export async function getStaticPaths() {
   return {

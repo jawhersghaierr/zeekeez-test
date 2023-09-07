@@ -3,10 +3,8 @@
     "types": [
       "cypress",
       "@cypress/react",
-      "jest",
-      "jest-dom",
-      "@testing-library/jest-dom"
-    ],
+      "jest"
+        ],
     "target": "es5",
     "lib": [
       "dom",

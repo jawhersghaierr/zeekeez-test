@@ -2,9 +2,9 @@ import "bootstrap/dist/css/bootstrap.min.css"; // Importez le fichier CSS de Boo
 import { Provider } from "react-redux";
 import "../styles/globals.css"; // Importez votre fichier globals.css ici
 import type { AppProps } from "next/app";
-import store from "@/redux/store";
 import Head from "next/head";
-import Header from "@/components/Header";
+import store from "../redux/store";
+import Header from "../components/Header";
 
 const MyApp = ({ Component, pageProps }: AppProps) => (
   <Provider store={store}>

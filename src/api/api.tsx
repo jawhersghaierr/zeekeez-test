@@ -1,4 +1,4 @@
-import { Post } from "@/redux/interfaces/PostType";
+import { Post } from "../redux/interfaces/PostType";
 import axios from "../utils/axios";
 
 export async function getPosts() {

@@ -1,0 +1,3 @@
+[build]
+  command = "npm run build"  # Or the build command for your project
+  publish = "out"           # Specify the directory where your built files are located (e.g., .next or out)
