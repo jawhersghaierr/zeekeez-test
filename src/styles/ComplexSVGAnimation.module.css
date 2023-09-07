@@ -1,0 +1,43 @@
+/* ComplexSVGAnimation.module.css */
+
+/* Center the container */
+.centerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust the height as needed to center vertically */
+  }
+  
+  /* Define styles for the animated SVG container */
+  .svgContainer {
+    width: 300px; /* Adjust the width as needed */
+  }
+  
+  /* Define styles for the title */
+  .title {
+    font-size: 24px; /* Adjust the font size as needed */
+    fill: #333; /* Adjust the text color as needed */
+    transition: fill 0.3s ease; /* Add a smooth transition for text color changes */
+  }
+  
+  /* Define styles for the animated title */
+  .animatedTitle {
+    fill: #ff5733; /* Adjust the animated text color as needed */
+  }
+  
+  /* Define styles for the image container with rotation animation */
+  .imageContainer {
+    transform-origin: center;
+    animation: rotateImage 2s linear infinite; /* Adjust the duration and timing function as needed */
+  }
+  
+  /* Keyframes for image rotation */
+  @keyframes rotateImage {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
