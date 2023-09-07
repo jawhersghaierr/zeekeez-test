@@ -27,15 +27,12 @@ export default function Posts() {
   }, []);
 
   return (
-    <div className="center-content mt-5">
+    <div className=" mt-5">
       {/* Contenu de votre page */}
       {showOtherContent ? (
         <>
           <div className="smallContainer">
-            <h1 className="smallTitle">Liste des postes</h1>
-            <p className="smallContent">
-              Ceci est un exemple de contenu des posts
-            </p>
+            <h1 className="smallTitle p-3">Liste des postes</h1>
           </div>
           <PostList page={currentPage} onPageChange={handlePageChange} />
         </>

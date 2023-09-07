@@ -1,0 +1,11 @@
+/* styles/custom.css */
+/* Custom styles for your navigation menu */
+.navbar {
+  border-radius: 0; /* Remove border radius */
+}
+
+.navbar-brand img {
+  max-width: 100%; /* Make the logo responsive */
+}
+
+/* Add more custom styles as needed */

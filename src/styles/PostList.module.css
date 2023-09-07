@@ -1,14 +1,12 @@
 .postList {
-    background-color: #f0f0f0;
-    padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
     @media (max-width: 768px) {
         /* Styles for screens up to 768px width (adjust as needed) */
     
         /* Adjust font size for the title and content */
         .smallTitle {
-            font-size: 18px;
+            font-size: 12px;
           }
       
           .smallContent {
@@ -17,7 +15,19 @@
     }
   }
   
+  .listItem {
+    border: 1px solid #ccc; /* Add border styles */
+    border-radius: 4px; /* Add border radius for rounded corners */
+    padding: 10px; /* Add padding to create space around content */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow for a shadow effect */
+    background-color: #fff; /* Add a background color if needed */
+    margin-bottom: 10px; /* Add margin to separate list items */
+  }
   
+  .listItem:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a different box shadow on hover */
+    transform: translateY(-2px); /* Add a slight lift on hover for interactive effect */
+  }
   
   .pagination {
     display: flex;
@@ -47,5 +57,7 @@
   }
   .searchContainer {
     margin-bottom: 20px;
-    margin-left: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+
   }

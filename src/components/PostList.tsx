@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
-import styles from "./PostList.module.css";
 import { useAppDispatch, useAppSelector } from "@/hooks/hooks";
 import { RootState } from "@/redux/store";
 import { fetchPosts, setCurrentPage } from "@/redux/slices/PostSlice";
 import Link from "next/link";
+
+import styles from "../styles/PostList.module.css";
 
 interface PostListProps {
   page: number;
@@ -39,24 +40,21 @@ const PostList: React.FC<PostListProps> = ({ page, onPageChange }) => {
     <div className={styles.postList}>
       <div className={styles.searchContainer}>
         <input
-          className="smallTitle"
           type="text"
           placeholder="Rechercher par titre..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />
       </div>
-      <ul>
-        {currentPosts.map((post) => (
-          <li key={post.id} className={styles.smallContent}>
-            <Link href={`/postDetails/${post.id}`}>{post.title}</Link>
-            <p>{post.body.slice(0, 50)}...</p>
-          </li>
-        ))}
-      </ul>
+      {currentPosts.map((post, index) => (
+        <div key={index} className={styles.listItem}>
+          <Link className={styles.smallTitle} href={`/postDetails/${post.id}`}>
+            {post.title}
+          </Link>
+          <p className={styles.smallTitle}>{post.body.slice(0, 50)}...</p>
+        </div>
+      ))}
       <div className={styles.pagination}>
-        {/* <p>Total : {totalPosts}</p>
-          <p>Nombre de pages : {totalPages}</p> */}
         <p className={styles.smallContent}>
           {indexOfFirstPost + 1} to {Math.min(indexOfLastPost, totalPosts)} of{" "}
           {totalPosts}
