@@ -9,6 +9,7 @@ const store = configureStore({
   preloadedState: {},
   enhancers: [],
 });
+// Expose the store globally for Cypress tests
 export type AppThunk<ReturnType = void> = ThunkAction<
   ReturnType,
   RootState,
